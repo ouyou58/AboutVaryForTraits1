@@ -1,24 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0k-uh-FCl">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="HQa-mc-85a">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="s0k-uh-FCl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tp-VA-CAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="横屏转动看看我的变化" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-tQ-kbc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rYp-L6-sBs"/>
+                                    <constraint firstAttribute="height" constant="40" id="rbA-Ve-a3F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rYp-L6-sBs"/>
+                                        <exclude reference="rbA-Ve-a3F"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <mask key="constraints">
+                                        <include reference="rbA-Ve-a3F"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <mask key="constraints">
+                                        <include reference="rYp-L6-sBs"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ELJ-tQ-kbc" firstAttribute="leading" secondItem="MMs-iH-TeS" secondAttribute="leading" id="BkX-q1-ER1"/>
+                            <constraint firstItem="MMs-iH-TeS" firstAttribute="trailing" secondItem="ELJ-tQ-kbc" secondAttribute="trailing" id="CQq-Je-EmG"/>
+                            <constraint firstItem="MMs-iH-TeS" firstAttribute="bottom" secondItem="ELJ-tQ-kbc" secondAttribute="bottom" constant="200" id="J7u-Cb-qWa"/>
+                            <constraint firstItem="ELJ-tQ-kbc" firstAttribute="top" secondItem="MMs-iH-TeS" secondAttribute="top" id="Lvc-S9-otj"/>
+                            <constraint firstItem="MMs-iH-TeS" firstAttribute="trailing" secondItem="ELJ-tQ-kbc" secondAttribute="trailing" id="Na5-zc-MRu"/>
+                            <constraint firstItem="MMs-iH-TeS" firstAttribute="trailing" secondItem="ELJ-tQ-kbc" secondAttribute="trailing" id="PLO-wm-Gwh"/>
+                            <constraint firstItem="ELJ-tQ-kbc" firstAttribute="leading" secondItem="5tp-VA-CAH" secondAttribute="leading" id="VEz-d6-lmo"/>
+                            <constraint firstItem="ELJ-tQ-kbc" firstAttribute="leading" secondItem="5tp-VA-CAH" secondAttribute="leading" id="WlN-72-k0a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MMs-iH-TeS"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CQq-Je-EmG"/>
+                                <exclude reference="J7u-Cb-qWa"/>
+                                <exclude reference="Na5-zc-MRu"/>
+                                <exclude reference="BkX-q1-ER1"/>
+                                <exclude reference="Lvc-S9-otj"/>
+                                <exclude reference="VEz-d6-lmo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="J7u-Cb-qWa"/>
+                                <include reference="Na5-zc-MRu"/>
+                                <include reference="VEz-d6-lmo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ELJ-tQ-kbc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CQq-Je-EmG"/>
+                                <include reference="BkX-q1-ER1"/>
+                                <include reference="Lvc-S9-otj"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94f-5N-6vc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="149" y="-471"/>
         </scene>
     </scenes>
 </document>
